@@ -1,0 +1,177 @@
+/* =========================================
+   BOOK APPOINTMENT PAGE
+========================================= */
+
+.appointment-page{
+    min-height:100vh;
+    background:linear-gradient(135deg,#f4f8ff,#eaf3ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.appointment-card{
+    width:100%;
+    max-width:750px;
+    background:#fff;
+    border-radius:25px;
+    padding:45px;
+    box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.appointment-card h2{
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    color:#1b2b52;
+    margin-bottom:10px;
+}
+
+.appointment-card h2 svg{
+    color:#0d6efd;
+    margin-right:10px;
+}
+
+.appointment-card p{
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+    font-size:16px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.appointment-card form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.input-box{
+    position:relative;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+    width:100%;
+    padding:16px 18px 16px 55px;
+    border:1px solid #d9d9d9;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+    background:#fff;
+}
+
+.input-box textarea{
+    resize:none;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus{
+
+    border-color:#0d6efd;
+    box-shadow:0 0 10px rgba(13,110,253,.18);
+
+}
+
+.input-icon{
+
+    position:absolute;
+
+    left:18px;
+
+    top:18px;
+
+    color:#0d6efd;
+
+    font-size:18px;
+
+}
+
+.textarea-box .input-icon{
+
+    top:20px;
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.appointment-card button{
+
+    margin-top:10px;
+
+    border:none;
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.appointment-card button:hover{
+
+    background:#0956d6;
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.appointment-card{
+
+padding:30px;
+
+}
+
+.appointment-card h2{
+
+font-size:28px;
+
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+
+font-size:15px;
+
+}
+
+}
